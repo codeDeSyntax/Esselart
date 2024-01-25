@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { FaFacebook, FaInstagram, FaStar, FaYoutube } from 'react-icons/fa';
 import './App.css';
+import art from './Images/art.jpg';
 function App() {
 
   const[display, setDisplay] = useState(false)
@@ -38,9 +39,9 @@ function App() {
 
         </nav>
 
-        <section className='flex flex-col p-6  sm:flex-row sm:p-8  sm:gap-4 h-[80vh]  m-auto'>
+        <section className='flex flex-col p-6  sm:flex-row sm:p-8 w-full sm:gap-4 '>
          
-        <div className='pageText flex flex-col items-center justify-center  sm:w-[45%] gap-8 mb-10 m-auto'>
+        <div className='pageText flex flex-col items-center justify-center  sm:w-1/2 gap-8 mb-10 '>
         
           <h1 className=' text-2xl sm:text-3xl font-bold text-center text-[poppins] text-violet-600 lg:text-[35px] '>Making <span className='text-white '>abstract , imaginary</span> and objects into real pencil arts !</h1>
           <button className='sm:py-2 sm:px-3 py-2 px-4 text-2xl text-violet-500 border w-[50%]  rounded-full hover:bg-white hover:cursor-pointer transition text-center '  >
@@ -53,9 +54,10 @@ function App() {
         </div>
         
         </div>
-        <div className='bg-cover  bg-[url("./Images/art.jpg")]  sm:w-[60%]  h-[90vh]  w-[90%]  md:h-[50vh] lg:h-[74vh] lg:w-[55%] flex  m-auto rounded-md'>
-        <FaStar  color='white' className='animate-spin transition text-xl blur-sm'/>
-        <FaStar size={30} color='white' className='animate-spin transition text-xl blur-sm' />
+        <div className='     flex flex-col  justify-center  rounded-md'>
+        <div className='flex justify-center items-center'><FaStar  color='white' className='animate-spin transition text-xl blur-sm'/>
+        <FaStar size={30} color='white' className='animate-spin transition text-xl blur-sm ' /></div>
+        <img src={art} alt='puc' width={600}/>
         </div>
 
         </section>
