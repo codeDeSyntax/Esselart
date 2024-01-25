@@ -13,7 +13,7 @@ function App() {
      <div className='mainDiv flex flex-col h-screen bg-gradient-to-b from-[#0b0212]  to-[#0b0212]'>
         <nav className='flex  justify-between items-center   p-2 pl-3 ' >
          <section className="logo flex justify-center items-center gap-3 ">
-            <div className='imageDiv rounded-full bg-cover bg-[url("./images/collinart.jpg")] p-5 flex'>
+            <div className='imageDiv rounded-full bg-cover bg-[url("./Images/collinart.jpg")] p-5 flex'>
             </div> 
             <label htmlFor="imageDiv" className='text-violet-500 font-bold text-1xl  sm:text-xl '>graphiteART <span className='text-white hover:text-violet-500 transition animate-spin'>⨀⨀</span>
             </label>
@@ -53,7 +53,7 @@ function App() {
         </div>
         
         </div>
-        <div className='bg-cover  bg-[url("./images/art.jpg")]  sm:w-[60%]  h-[90vh]  w-[90%] sm:flex sm:justify-center md:h-[50vh] lg:h-[74vh] lg:w-[55%] flex justify-center m-auto rounded-md'>
+        <div className='bg-cover  bg-[url("./Images/art.jpg")]  sm:w-[60%]  h-[90vh]  w-[90%] sm:flex sm:justify-center md:h-[50vh] lg:h-[74vh] lg:w-[55%] flex justify-center m-auto rounded-md'>
         <FaStar  color='white' className='animate-spin transition text-xl blur-sm'/>
         <FaStar size={30} color='white' className='animate-spin transition text-xl blur-sm' />
         </div>
