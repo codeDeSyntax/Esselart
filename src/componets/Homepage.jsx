@@ -10,7 +10,7 @@ const Homepage = () => {
   return (
     <>
     <div className='mainDiv flex flex-col h-screen bg-contain sm:bg-cover bg-[url("./Images/adobe1.jpg")] '>
-        <nav className='flex  justify-between items-center   p-2 pl-3 ' >
+        <nav className='flex  justify-between items-center   p-2 pl-3 bg-orange-300 sm:bg-transparent' >
          <section className="logo flex justify-center items-center gap-3 ">
             <div className='imageDiv rounded-full bg-cover bg-[url("./Images/collinart.jpg")] p-5 flex'>
             </div> 
@@ -18,7 +18,7 @@ const Homepage = () => {
             </label>
          </section>
 
-          <button className='font-bold text-white md:hidden sm:hidden' onClick={toggleDrop}>⇶</button>
+          <button className='font-bold text-black md:hidden sm:hidden' onClick={toggleDrop}>⇶</button>
 
           <div className={`navitems gap-4 flex-col z-20 bg-orange-600 left-0 absolute top-0  p-3 w-full  sm:flex sm:flex-row  justify-between sm:w-[40%] lg:pr-[8vw]  sm:relative  sm:bg-inherit  sm:items-center md:gap-4 ${display ? '' : 'hidden'} `}>
 
@@ -46,10 +46,10 @@ const Homepage = () => {
           <h1 className=' text-2xl sm:text-3xl font-bold text-center text-[poppins] text-orange-600 lg:text-[35px] '>Making <span className='text-white animate-pulse'>abstract , imaginary</span> and objects into real pencil arts !</h1>
 
           <div>
-          <button className='sm:py-2 sm:px-3 py-1 px-3 text-xl text-orange-500 border   rounded-md hover:bg-white hover:cursor-pointer transition text-center mr-4 focus:outline-none bg-white'  >
+          <button className='sm:py-2 sm:px-3 py-1 px-3 text-[16px] text-orange-500 border   rounded-md hover:bg-white hover:cursor-pointer transition text-center mr-4 focus:outline-none bg-white'  >
             Login
           </button>
-          <button className='sm:py-2 sm:px-3 py-1 px-3  text-xl text-orange-500 border   rounded-md hover:bg-white hover:cursor-pointer transition text-center focus:outline-none bg-white'  >
+          <button className='sm:py-2 sm:px-3 py-1 px-3  text-[16px] text-orange-500 border   rounded-md hover:bg-white hover:cursor-pointer transition text-center focus:outline-none bg-white'  >
             Sign up!
           </button>
           </div>
