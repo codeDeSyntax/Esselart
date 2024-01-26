@@ -9,7 +9,7 @@ const Homepage = () => {
 
   return (
     <>
-    <div className='mainDiv flex flex-col h-screen bg-cover  bg-[url("./images/adobe1.jpg")] '>
+    <div className='mainDiv flex flex-col h-screen bg-cover  bg-[url("./Images/adobe1.jpg")] '>
         <nav className='flex  justify-between items-center   p-2 pl-3 ' >
          <section className="logo flex justify-center items-center gap-3 ">
             <div className='imageDiv rounded-full bg-cover bg-[url("./Images/collinart.jpg")] p-5 flex'>
