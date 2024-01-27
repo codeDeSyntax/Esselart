@@ -35,11 +35,11 @@ const Art = () => {
         return(
             <div className="w-full px-2">
         <div className="flex w-full flex-col ">
-            <div className="flex justify-center items-center border gap-4  w-full border-orange-300"  >
-                <input type="search" name="" id="" placeholder="search art and videos" className="border p-4 w-full sm:w-1/3" />
+            <div className="flex justify-center items-center border gap-4  w-full border-violet-300 pr-2"  >
+                <input type="search" name="" id="" placeholder="search art and videos" className="border p-4 w-[90%] sm:w-1/3" />
                 <div className="flex gap-4">
-                    <p className='hover:cursor-pointer'>Images</p>
-                    <p onClick={() => setDisplay('videos')} className='hover:cursor-pointer'>Videos</p>
+                    <p className='hover:cursor-pointer p-1 bg-violet-200 rounded-md'>Images</p>
+                    <p onClick={() => setDisplay('videos')} className='hover:cursor-pointer p-1 bg-violet-200 rounded-md'>Videos</p>
                     
                 </div>
             </div>
@@ -69,11 +69,11 @@ const Art = () => {
         return(
             <div className="w-full px-2">
         <div className="flex w-full flex-col ">
-            <div className="flex justify-center items-center border gap-4  w-full border-orange-300"  >
+            <div className="flex justify-center items-center border gap-4  w-full border-violet-300 pr-2"  >
                 <input type="search" name="" id="" placeholder="search art and videos" className="border p-4 w-full sm:w-1/3" />
                 <div className="flex gap-4">
-                    <p onClick={() => setDisplay('images')} className='hover:cursor-pointer'>Images</p>
-                    <p className='hover:cursor-pointer'>Videos</p>
+                    <p onClick={() => setDisplay('images')} className='hover:cursor-pointer bg-violet-200 rounded-md p-1'>Images</p>
+                    <p className='hover:cursor-pointer bg-violet-200 rounded-md p-1'>Videos</p>
                     
                 </div>
             </div>

@@ -49,8 +49,8 @@ const Gallery = () => {
                 <div className=' w-screen  py-10  '>
                     <div className='w-[100%] sm:[80%]  flex flex-col md:flex-row justify-center '>
                             <div className='px-8 sm:px-12 py-10 w-[100%] sm:w-[40%]' >
-                                <p className='text-4xl text-center font-bold text-orange-400'>About us</p>
-                                <p className='text-gray-500'>
+                                <p className='text-4xl text-center font-bold text-violet-500 border-b-2 pb-2'>About us</p>
+                                <p className='text-gray-500 pt-4'>
                                 In the center of the logo, visualize a harmonious blend of 
                                 a sleek electric guitar and a grand piano, symbolizing a fusion of two passions: music and coding. 
                                 The guitar strings gracefully intertwine with lines of elegant code, forming a seamless connection between the worlds of melody and technology.
@@ -60,8 +60,8 @@ const Gallery = () => {
                                 </p>
                             </div>
                             <div className='px-8 sm:px-12 py-10 w-[100%] sm:w-[40%]' >
-                                <p className='text-4xl text-center font-bold text-orange-400 '>What we do</p>
-                                <p className='text-gray-500'>
+                                <p className='text-4xl text-center font-bold text-violet-500 border-b-2 pb-2'>What we do</p>
+                                <p className='text-gray-500 pt-4'>
                                 In the center of the logo, visualize a harmonious blend of a sleek electric guitar and a grand piano,
                                 symbolizing a fusion of two passions: music and coding. The guitar strings gracefully intertwine with lines of elegant code, 
                                 forming a seamless connection between the worlds of melody and technology.
@@ -85,7 +85,7 @@ const Gallery = () => {
                                  The guitar strings gracefully intertwine with lines of elegant code, 
                                 </p>
 
-                                <div className=' sm:px-5 sm:py-4 px- bg-gradient-to-b from-orange-400 to-orange-200 sm:w-[55%] w-[60%] text-center rounded-md px-3 py-4'>
+                                <div className=' sm:px-5 sm:py-4 px- bg-gradient-to-b from-violet-600 to-violet-400 sm:w-[55%] w-[60%] text-center text-white rounded-md px-3 py-4'>
                                 Request for service
                                 </div>
                             </div> 

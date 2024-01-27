@@ -6,12 +6,12 @@ import Navbar from './componets/Navbar';
 
 function App() {
   return (
-   <div className='w-full flex flex-col '>
+   <>
   <Navbar/>
    <Homepage/>
    <Art/>
    <Gallery/>
-   </div>
+   </>
     
   );
 }
