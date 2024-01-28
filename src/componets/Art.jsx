@@ -1,5 +1,7 @@
 
 import { useState } from 'react'
+import vid from '../assets/vid.mp4'
+import vid1 from '../assets/vid1.mp4'
 import grid from '../gridImages/grid.jpg'
 import grid1 from '../gridImages/grid1.jpg'
 import grid10 from '../gridImages/grid10.jpg'
@@ -31,9 +33,19 @@ const Art = () => {
         {id:11 , image:grid11 },
     ]
 
+    const vids = [
+        {id:1 , name:vid1 , name1:vid},
+        {id:2 , name:vid , name1:vid1},
+        {id:3 , name:vid1 , name1:vid},
+        {id:4 , name:vid , name1:vid1},
+        {id:5 , name:vid1 , name1:vid},
+        {id:6 , name:vid , name1:vid1},
+        {id:7 , name:vid , name1:vid1},
+    ]
+
     const Images = () => {
         return(
-            <div className="w-full px-2">
+            <div name='Arts' className="w-full px-2">
         <div className="flex w-full flex-col ">
             <div className="flex justify-center items-center border gap-4  w-full border-violet-300 pr-2"  >
                 <input type="search" name="" id="" placeholder="search art and videos" className="border p-4 w-[90%] sm:w-1/3" />
@@ -67,7 +79,7 @@ const Art = () => {
 
     const Videos = () => {
         return(
-            <div className="w-full px-2">
+            <div name='Arts' className="w-full px-2">
         <div className="flex w-full flex-col ">
             <div className="flex justify-center items-center border gap-4  w-full border-violet-300 pr-2"  >
                 <input type="search" name="" id="" placeholder="search art and videos" className="border p-4 w-full sm:w-1/3" />
@@ -78,7 +90,19 @@ const Art = () => {
                 </div>
             </div>
 
-            
+                <div className='w-full'>
+                    <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 w-[90%] m-auto pt-3'>
+                        
+                       {
+                        vids.map((vid) => (
+                            <div key ={vid.id }className='w-full  h-[100%] gap-2 flex flex-col '>
+                            <video src={vid.name} className='w-[95%] mb-2 ' muted autoPlay ></video>
+                            <video src={vid.name1} className='w-[95%] ' muted autoPlay ></video>
+                        </div>
+                        ))
+                       }
+                    </div>
+                </div>
         </div>
     </div>
         )
